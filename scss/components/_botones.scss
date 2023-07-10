@@ -1,0 +1,40 @@
+.boton_primario{
+    font-family: $ff-monse;
+    color: $color-blanco;
+    font-size: 0.625rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: $color-dorado;
+    padding: 0.75rem 1.5rem;
+}
+
+.boton-secundario {
+    font-family: $ff-poppins;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    color: #333;
+    border: 2px solid var(--gold, #A88F61);
+    color: $color-dorado;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: .70rem;
+    text-decoration: none;
+
+    &__negativo{
+        color: $color-dorado;
+        border: 2px solid var(--gold, #f0ca83);
+    }
+
+}
+
+.boton_terciario{
+    color: #03989E;
+    font-family: $ff-poppins;
+    font-size: 0.87rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-decoration: underline;
+}

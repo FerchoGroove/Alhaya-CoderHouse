@@ -1,0 +1,45 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 1px solid #ccc;
+            width: 550px;
+            padding: 16px 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        select{
+            width: 585px;
+            padding: 16px 16px;
+        }
+
+        button[type="submit"] {
+            padding: 16px 16px;
+            width: 585px;
+            padding: 16px 16px;
+            background-color:$color-dorado;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
