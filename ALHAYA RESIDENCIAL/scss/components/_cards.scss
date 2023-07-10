@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 340px;
+    height: 420px;
+    flex-shrink: 0;
+
+    & h4{
+        font-family: $ff-poppins;
+        font-size: .8rem;
+        margin-top: 1rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: $color-chocolate;
+    }
+}

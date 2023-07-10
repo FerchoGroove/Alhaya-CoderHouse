@@ -1,0 +1,408 @@
+.section_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 485px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #004346 100%), url(../../img/fondo-alhaya-tulum.jpg), lightgray -4.871px -366.496px / 100.471% 185.565% no-repeat;
+    box-shadow: 0px -19px 40px 0px rgba(0, 0, 0, 0.45) inset;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+    &_texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        filter: drop-shadow(0px 2px 12px rgba(26, 25, 25, 0.75));
+
+        & h1 {
+            color: $color-blanco;
+            text-align: center;
+            line-height: 110%;
+            margin: 0;
+            padding: 0;
+        }
+
+        & p {
+            display: inline-block;
+            color: $color-blanco;
+            text-align: center;
+            width: 665px;
+            flex-direction: column;
+            flex-shrink: 0;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        & a {
+            color: $color-blanco;
+        }
+
+
+    }
+
+
+}
+
+section {
+    display: flex;
+    color: $color-gris-parrafos;
+
+    & .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 50px;
+
+        &_isotipo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 2rem;
+            height: auto;
+
+            & article {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                gap: 24px;
+                margin-left: 3rem;
+
+                .titulo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                & h2 {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                & span {
+                    font-family: $ff-poppins;
+                    color: $color-chocolate;
+                }
+
+            }
+
+            &_carrusel {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+
+                &-content {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    overflow: hidden;
+
+                }
+
+                .carrusel_nav {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1rem;
+                    width: 100%;
+                    padding: 1rem 0;
+
+                }
+
+                .narrows {
+                    display: flex;
+                    flex-direction: row;
+                    width: 10%;
+                    justify-content: space-between;
+                    gap: 2rem;
+                }
+
+                .nav-line {
+                    width: 90%;
+                    height: 1px;
+                    background-color: $color-chocolate;
+
+                }
+
+            }
+
+
+        }
+    }
+}
+
+.content_map {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $color-chocolate;
+    width: 100%;
+    padding: 5rem 0;
+
+    span {
+        display: inline-block;
+        font-family: $ff-monse;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #797979;
+        text-align: end;
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .photo-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_textmap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: flex-start;
+        position: relative;
+        margin-top: -100px;
+        margin-left: 40px;
+
+    }
+}
+
+
+
+.content_info {
+    display: flex;
+    align-items: center;
+
+
+    article {
+        flex: 1;
+        padding: 2rem;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2.8rem;
+        }
+
+        p {
+            font-size: .8rem;
+            margin-bottom: 2rem;
+        }
+
+        .boton-secundario {
+            display: inline-block;
+
+        }
+    }
+
+    figure {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+section {
+    .content_ubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:$color-chocolate;
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            padding: 3rem 3rem 1rem 3rem;
+
+            div {
+                flex: 1;
+            }
+
+            h2 {
+                font-size: 2rem;
+                color: #fff;
+            }
+
+            p {
+                font-size: .8rem;
+                color: #fff;
+                font-weight: 100;
+                margin-top: 1rem;
+            }
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem 3rem 2rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            span {
+                font-size: 0.80rem;
+                letter-spacing: 3px;
+                color:#00C7CF;
+                font-family: $ff-poppins;
+                margin-bottom: 1rem;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+
+    .master-plan{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10rem 3rem;
+        width: 70%;
+        
+
+
+        article{
+            height: 500px;
+            min-width: 30%;
+            background-color: $color-chocolate;
+            padding: 0 2.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+
+            span{
+                font-size: 0.80rem;
+                letter-spacing: 3px;
+                color:$color-dorado;
+                font-family: $ff-poppins;
+                margin-bottom: 2rem;
+            }
+
+            .text-big{
+                font-family: $ff-syncopate;
+                font-size: 3rem;
+                color: $color-blanco;
+                margin-bottom: 2rem;
+            }
+
+            
+
+        }
+
+        .img_render{
+            min-width: 70%;
+            min-height: 500px;
+            background-image: url(../../img/render-edificio.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+    }
+}
+
+section {
+    display: flex;
+    align-items: center;
+
+    .content_tagline{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        padding: 200px 0 100px;
+        gap: 130px;
+
+            span{
+                font-family: $ff-syncopate;
+                color: $color-chocolate;
+                font-size: 2rem;
+                font-weight: 200;
+                text-align: center;
+            }
+
+            .vertical-line{
+                width: 1px;
+                height: 250px;
+                background-color: $color-chocolate;
+            }
+
+
+
+    }
+}
+
+
+
+
+section{
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+
+        span{
+            font-size: 0.80rem;
+            letter-spacing: 3px;
+            color:$color-dorado;
+            font-family: $ff-poppins;
+            margin-bottom: .5rem;
+        }
+
+        h3{
+            font-size: 24px;
+            font-weight: 100;
+            margin: .5rem 0;
+        }
+
+        p{
+            margin-bottom: 3rem;
+        }
+    }
+}
