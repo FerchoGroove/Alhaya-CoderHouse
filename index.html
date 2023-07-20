@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,400;1,500;1,700&family=Poppins:wght@100;300;400;500;600;700&family=Syncopate&display=swap"
         rel="stylesheet">
+    
 </head>
 
 <body>
@@ -39,19 +40,21 @@
                 <img src="img/svg/linkedin-icon.svg" alt="">
             </div>
 
-            <a href="index.html" class="logotipo">
+            <a href="index.html" class=".container__logotipo">
                 <img src="img/svg/logotipo-alhaya.svg" alt="logotipo-alhaya">
             </a>
 
-            <a href="index.html" class="boton_primario">CONCRETA UNA CITA
+            <a href="index.html" class="boton_primario boton_concreta">CONCRETA UNA CITA
 
             </a>
+
+            <a class="menu-hamburguesa" href="#menu-hambuerguesa"><img src="./img/svg/burguermenu.svg" alt=""></a>
 
         </div>
 
         <div class="line"> .</div>
 
-        <nav>
+        <nav class="menu-desplegable">
             <ul>
                 <a href="./pages/conocealhaya.html">CONOCE ALHAYA</a>
                 <a href="./pages/masterplan.html">MASTER PLAN</a>
@@ -60,6 +63,7 @@
                 <a href="https://grupodaxi.com/es/home" target="_blank">DESARROLLADOR</a>
             </ul>
         </nav>
+        <div class="bar-gradient css-selector"> </div>
 
     </header>
 
@@ -68,17 +72,18 @@
 
 
         <section class="section_container">
-            <div class="section_container_texts">
+            <div class="section_container__texts">
                 <h1>
-                    VIVE EN ARMONÍA CON LA<br>NATURALEZA EN TULUM
+                    VIVE EN ARMONÍA CON LA NATURALEZA EN TULUM
                 </h1>
                 <p>
                     La Riviera Maya ha transformado la forma en que vivimos, pensamos y nos relacionamos con las
                     personas y la naturaleza. Tulum se ha convertido en el paraíso de aquellos.
                 </p>
-                <a href="" class="section_container_texts a boton_primario">QUIERO INVERTIR</a>
+                <a href="" class="section_container__texts__link boton_primario">QUIERO INVERTIR</a>
             </div>
         </section>
+
 
 
         <section>
@@ -161,7 +166,7 @@
                             km7 carretera Tulum - Coba nueva zona del<br> desarrollo urbano.
                         </span>
 
-                        <img src="./img/foto-aerea-tulum.jpg" style="width: 100%;" alt="aereal-photo-tulum">
+                        <img src="./img/foto-aerea-tulum.jpg" style="width: 85%;" alt="aereal-photo-tulum">
 
                         <div class="content_map_textmap">
                             <p class="text_tags">DESCUBRE</p>
@@ -352,11 +357,11 @@
                     <span>
                         Colima 392, 2do. Piso Colonia Roma,
                         Delegación Cuauhtémoc<br>C.P. 06700, Ciudad de México.
-    
+
                     </span>
-    
+
                 </article>
-    
+
                 <article>
                     <h4>SITE MAP</h4>
                     <ul>
@@ -367,7 +372,7 @@
                         <li><a href="">DESARROLLADOR</a></li>
                     </ul>
                 </article>
-    
+
                 <article>
                     <h4>GRUPO DAXY</h4>
                     <ul>
@@ -376,22 +381,22 @@
                         <li><a href="">RELACIÓN DE INVERSIONISTAS</a></li>
                     </ul>
                 </article>
-    
+
                 <article>
                     <h4>CONTACTO</h4>
                     <span>tel. +52 998 87 7268</span>
 
                     <div class="social-footer">
-                        <span>hola@grupodaxy.com</span>
+                        <span>email:hola@grupodaxy.com</span>
                         <div class="icons">
                             <img src="img/svg/insta-icon.svg" alt="">
                             <img src="img/svg/face-icon.svg" alt="">
                             <img src="img/svg/linkedin-icon.svg" alt="">
                         </div>
-                        
+
                     </div>
                 </article>
-    
+
             </div>
 
             <div class="footer_content-2">
@@ -400,11 +405,24 @@
                 <div class="empty"></div>
                 <a href="">términos y condiciones</a>
             </div>
-    
+
 
         </div>
 
     </footer>
+
+
+
+
+    <script>
+        // Tu código JavaScript aquí
+        const botonHamburguesa = document.querySelector('.menu-hamburguesa');
+        const menuDesplegable = document.querySelector('.menu-desplegable');
+
+        botonHamburguesa.addEventListener('click', () => {
+            menuDesplegable.classList.toggle('mostrar');
+        });
+    </script>
 
 </body>
 

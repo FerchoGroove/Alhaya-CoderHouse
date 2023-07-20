@@ -39,19 +39,21 @@
                 <img src="../img/svg/linkedin-icon.svg" alt="">
             </div>
 
-            <a href="../index.html" class="logotipo">
+            <a href="../index.html" class=".container__logotipo">
                 <img src="../img/svg/logotipo-alhaya.svg" alt="logotipo-alhaya">
             </a>
 
-            <a href="index.html" class="boton_primario">CONCRETA UNA CITA
+            <a href="index.html" class="boton_primario boton_concreta">CONCRETA UNA CITA
 
             </a>
 
+            <a class="menu-hamburguesa" href="#menu-hambuerguesa"><img src="../img/svg/burguermenu.svg" alt=""></a>
+
         </div>
 
-        <div class="line"> </div>
+        <div class="line"> .</div>
 
-        <nav>
+        <nav class="menu-desplegable">
             <ul>
                 <a href="./conocealhaya.html">CONOCE ALHAYA</a>
                 <a href="./masterplan.html">MASTER PLAN</a>
@@ -208,6 +210,16 @@
         </div>
 
     </footer>
+
+    <script>
+        // Tu código JavaScript aquí
+        const botonHamburguesa = document.querySelector('.menu-hamburguesa');
+        const menuDesplegable = document.querySelector('.menu-desplegable');
+
+        botonHamburguesa.addEventListener('click', () => {
+            menuDesplegable.classList.toggle('mostrar');
+        });
+    </script>
 
 
 
