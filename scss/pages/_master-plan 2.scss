@@ -1,0 +1,806 @@
+.master-plan-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    padding: 5rem 3rem;
+    margin-bottom: 65px;
+    gap: 2rem;
+
+    .article_titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title-subtitle {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 2rem;
+
+            h1 {
+                margin: 0;
+            }
+
+            p {
+                width: 500px;
+            }
+        }
+
+        .line-decoration {
+            width: 45px;
+            height: 1px;
+            background-color: $color-chocolate;
+        }
+    }
+
+    &__bullets {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .bullet {
+            width: 28%;
+
+
+            p {
+                font-size: .75rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    & figure {
+        display: flex;
+        margin: 0;
+        min-width: none;
+        width: 100%;
+        height: 250%;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+
+}
+
+.sec-amenidades {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+
+.label-amenidades {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    padding: 1rem 3rem;
+    align-items: flex-end;
+    align-self: flex-start;
+
+
+    & span {
+        font-size: 0.80rem;
+        letter-spacing: 3px;
+        color: $color-dorado;
+        font-family: $ff-poppins;
+        margin-bottom: .5rem;
+    }
+
+}
+
+.container_amenidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid var(--color-parrafos-positivo, #797979);
+
+    .content-amenidad {
+        padding: 5rem 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        position: sticky;
+        top: 0;
+
+        article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0;
+
+            .info-amenidad {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-width: 30%;
+                padding: 2rem;
+
+                h3 {
+                    margin: 0 0 1rem 0;
+                }
+
+                span {
+                    font-family: $ff-poppins;
+                    color: $color-dorado;
+                    font-size: 0.85rem;
+                }
+            }
+
+            p {
+                flex: 1;
+                padding: 2rem;
+            }
+        }
+
+        figure {
+            margin: 0;
+            width: 80%;
+            height: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and  (max-width: 960px) {
+
+    .master-plan-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 3rem 2rem;
+        margin-bottom: 65px;
+    
+        gap: 2rem;
+    
+        .article_titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+    
+            .title-subtitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2rem;
+                width: 100%;
+    
+                h1 {
+                    margin: 0;
+                    font-size: 1.8rem;
+                }
+    
+                p {
+                    width: 60%;
+                }
+            }
+    
+            .line-decoration {
+                width: 45px;
+                height: 1px;
+                margin-top: 1rem;
+                background-color: $color-chocolate;
+            }
+        }
+    
+        &__bullets {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0;
+    
+            .bullet {
+                width: 30%;
+                padding: .65rem;
+    
+    
+                p {
+                    font-size: .75rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    
+        figure {
+            display: flex;
+            margin: 0;
+            width: 100%;
+    
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+            }
+    
+        }
+    
+    
+    }
+    
+    .sec-amenidades {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    
+    
+    
+    .label-amenidades {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        padding: 1rem 3rem;
+        align-items: center;
+        align-self: center;
+    
+    
+        & span {
+            font-size: 0.80rem;
+            letter-spacing: 3px;
+            color: $color-dorado;
+            font-family: $ff-poppins;
+            margin-bottom: .5rem;
+        }
+    
+    }
+    
+    .container_amenidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid var(--color-parrafos-positivo, #797979);
+    
+        .content-amenidad {
+            padding: 1rem 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            position: sticky;
+            top: 0;
+    
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                margin: 0;
+                padding: 2rem;
+                gap: 1rem;
+
+            p{
+                padding: 0;
+                line-height: 135%;
+            }
+    
+                .info-amenidad {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    min-width: 100%;
+                    padding: 0;
+    
+                    h3 {
+                        margin: 0 0 1rem 0;
+                    }
+    
+                    span {
+                        font-family: $ff-poppins;
+                        color: $color-dorado;
+                        font-size: 0.85rem;
+                    }
+
+
+                }
+
+                div{
+                    min-width: 100%;
+                    padding: 0;
+
+                    p {
+                        flex: 1;
+                        width: 60%;
+                        margin: 0;
+                        line-height: 1.5;
+
+                    }
+                }
+    
+
+            }
+    
+            figure {
+                margin: 0;
+                width: 90%;
+                height: auto;
+    
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .master-plan-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 3rem 2rem;
+        margin-bottom: 65px;
+    
+        gap: 2rem;
+    
+        .article_titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+    
+            .title-subtitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2rem;
+                width: 100%;
+    
+                h1 {
+                    margin: 0;
+                    font-size: 1.8rem;
+                }
+    
+                p {
+                    width: 100%;
+                }
+            }
+    
+            .line-decoration {
+                width: 45px;
+                height: 1px;
+                margin-top: 1rem;
+                background-color: $color-chocolate;
+            }
+        }
+    
+        &__bullets {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0;
+    
+            .bullet {
+                width: 30%;
+                padding: .65rem;
+    
+    
+                p {
+                    font-size: .75rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    
+        figure {
+            display: flex;
+            margin: 0;
+            width: 100%;
+    
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+            }
+    
+        }
+    
+    
+    }
+    
+    .sec-amenidades {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    
+    
+    
+    .label-amenidades {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        padding: 1rem 3rem;
+        align-items: center;
+        align-self: center;
+    
+    
+        & span {
+            font-size: 0.80rem;
+            letter-spacing: 3px;
+            color: $color-dorado;
+            font-family: $ff-poppins;
+            margin-bottom: .5rem;
+        }
+    
+    }
+    
+    .container_amenidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid var(--color-parrafos-positivo, #797979);
+    
+        .content-amenidad {
+            padding: 1rem 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            position: sticky;
+            top: 0;
+    
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                margin: 0;
+                padding: 2rem;
+                gap: 1rem;
+
+            p{
+                padding: 0;
+                line-height: 135%;
+            }
+    
+                .info-amenidad {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    min-width: 100%;
+                    padding: 0;
+    
+                    h3 {
+                        margin: 0 0 1rem 0;
+                    }
+    
+                    span {
+                        font-family: $ff-poppins;
+                        color: $color-dorado;
+                        font-size: 0.85rem;
+                    }
+
+
+                }
+
+                div{
+                    min-width: 100%;
+                    padding: 0;
+
+                    p {
+                        flex: 1;
+                        width: 100%;
+                        margin: 0;
+
+                    }
+                }
+    
+
+            }
+    
+            figure {
+                margin: 0;
+                width: 90%;
+                height: auto;
+    
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 390px) {
+
+    .master-plan-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 3rem 1rem;
+        margin-bottom: 65px;
+    
+        gap: 2rem;
+    
+        .article_titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+    
+            .title-subtitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2rem;
+                width: 100%;
+    
+                h1 {
+                    margin: 0;
+                    font-size: 1.8rem;
+                }
+    
+                p {
+                    width: 100%;
+                }
+            }
+    
+            .line-decoration {
+                width: 45px;
+                height: 1px;
+                margin-top: 1rem;
+                background-color: $color-chocolate;
+            }
+        }
+    
+        &__bullets {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0;
+    
+            .bullet {
+                width: 100%;
+                padding: .65rem;
+    
+    
+                p {
+                    font-size: .75rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    
+        figure {
+            display: flex;
+            margin: 0;
+            width: 100%;
+    
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+            }
+    
+        }
+    
+    
+    }
+    
+    .sec-amenidades {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    
+    
+    
+    .label-amenidades {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        padding: 1rem 3rem;
+        align-items: center;
+        align-self: center;
+    
+    
+        & span {
+            font-size: 0.80rem;
+            letter-spacing: 3px;
+            color: $color-dorado;
+            font-family: $ff-poppins;
+            margin-bottom: .5rem;
+        }
+    
+    }
+    
+    .container_amenidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid var(--color-parrafos-positivo, #797979);
+    
+        .content-amenidad {
+            padding: 1rem 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+    
+            position: sticky;
+            top: 0;
+    
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                margin: 0;
+                padding: 1rem;
+                gap: 1rem;
+
+            p{
+                padding: 0;
+                line-height: 135%;
+            }
+    
+                .info-amenidad {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    min-width: 100%;
+                    padding: 0;
+    
+                    h3 {
+                        margin: 0 0 1rem 0;
+                    }
+    
+                    span {
+                        font-family: $ff-poppins;
+                        color: $color-dorado;
+                        font-size: 0.85rem;
+                    }
+
+
+                }
+
+                div{
+                    min-width: 100%;
+                    padding: 0;
+
+                    p {
+                        flex: 1;
+                        width: 100%;
+                        margin: 0;
+
+                    }
+                }
+    
+
+            }
+    
+            figure {
+                margin: 0;
+                width: 90%;
+                height: auto;
+    
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+}

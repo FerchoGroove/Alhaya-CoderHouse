@@ -1,0 +1,667 @@
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $color-header-footer;
+
+    .contacto {
+        display: flex;
+        flex-direction: row;
+        background-color: $color-chocolate;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 12.5rem;
+        align-items: center;
+        font-size: .0.5rem;
+        color: $color-blanco;
+        font-family: $ff-monse;
+
+
+        &__telefono {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem 0rem;
+            gap: 1rem;
+
+            span {
+                display: inline-block;
+                color: $color-blanco;
+                font-size: .8rem;
+            }
+
+            img {
+                display: inline-block;
+            }
+        }
+
+        &__mail {
+            font-family: $ff-monse;
+            font-size: .8rem;
+            color: $color-blanco;
+        }
+    }
+
+    & .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0;
+        gap: 10rem;
+
+        &__social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 190px;
+            height: 38px;
+        }
+
+
+        & .boton_concreta{
+            display: flex;
+        }
+
+        & .menu-hamburguesa{
+            @include flex-box(center,center);
+            width: 20%;
+            height: 82px;
+            display: none;
+            border-left: solid 1px #656565;
+        }
+
+
+
+    }
+
+    & .line {
+        width: 100%;
+        height: 1px;
+        background-color: #ABABAB;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+        background-color: #E8E8E8;
+
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            list-style: none;
+
+        }
+
+        a {
+            font-family: $ff-monse;
+            letter-spacing: 2px;
+            font-size: .6rem;
+            letter-spacing: 2px;
+            text-align: center;
+            color: $color-chocolate;
+
+            &:hover {
+                color: $color-turquesa;
+            }
+        }
+    }
+    .bar-gradient{
+        width: 100%;
+        height: 8px;
+    }
+
+    .css-selector {
+        background: linear-gradient(91deg, #a88f61, #49453e, #f7dbac, #2f2d29, #725a2a, #c1a97b);
+        background-size: 1200% 1200%;
+    
+        -webkit-animation: AnimationName 25s ease infinite;
+        -moz-animation: AnimationName 25s ease infinite;
+        animation: AnimationName 25s ease infinite;
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 45%}
+        50%{background-position:100% 56%}
+        100%{background-position:0% 45%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 45%}
+        50%{background-position:100% 56%}
+        100%{background-position:0% 45%}
+    }
+    @keyframes AnimationName { 
+        0%{background-position:0% 45%}
+        50%{background-position:100% 56%}
+        100%{background-position:0% 45%}
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and  (max-width: 960px) {
+
+
+    .menu-desplegable {
+        display: none;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+    .menu-desplegable.mostrar {
+        display: block;
+    }
+
+    
+
+    header {
+
+        .contacto {
+            display: flex;
+            flex-direction: row;
+            background-color: $color-chocolate;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 1rem;
+            align-items: center;
+            font-size: .0.45rem;
+            color: $color-blanco;
+            font-family: $ff-monse;
+            gap: 2rem;
+
+
+            &__telefono {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: .5rem 0rem;
+
+                span {
+                    display: inline-block;
+                    color: $color-blanco;
+                    font-size: .65rem;
+                }
+
+                img {
+
+                    display: none;
+                }
+            }
+
+            &__mail {
+                font-family: $ff-monse;
+                font-size: .65rem;
+                color: $color-blanco;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem 0rem;
+            height: auto;
+            gap: 10rem;
+            padding: 0rem 0rem 0rem 2rem;
+
+
+            &__social-icons {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                width: 190px;
+                height: 38px;
+            }
+
+            & .logotipo{
+                @include flex-box(center,center);
+                width: 30%;
+                height: 82px;
+            }
+
+
+            & .boton_concreta{
+                display: none;
+            }
+
+            & .menu-hamburguesa{
+                @include flex-box(center,center);
+                width: 20%;
+                height: 82px;
+                border-left: solid 1px #656565;
+            }
+
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #ABABAB;
+        }
+
+        nav {
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 0;
+            background-color: #E8E8E8;
+
+            .menu-desplegable {
+                display: none;
+            }
+    
+            .menu-desplegable.mostrar {
+                display: block;
+            }
+            
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 45px;
+                list-style: none;
+
+            }
+
+            a {
+                font-family: $ff-monse;
+                letter-spacing: 1px;
+                font-size: .65rem;
+                letter-spacing: 2px;
+                text-align: center;
+                color: $color-chocolate;
+
+
+                &:hover {
+                    color: $color-turquesa;
+                }
+
+
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+
+        .contacto {
+            display: flex;
+            flex-direction: row;
+            background-color: $color-chocolate;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 1rem;
+            align-items: center;
+            font-size: .0.45rem;
+            color: $color-blanco;
+            font-family: $ff-monse;
+            gap: 2rem;
+
+
+            &__telefono {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: .5rem 0rem;
+
+                span {
+                    display: inline-block;
+                    color: $color-blanco;
+                    font-size: .65rem;
+                }
+
+                img {
+
+                    display: none;
+                }
+            }
+
+            &__mail {
+                font-family: $ff-monse;
+                font-size: .65rem;
+                color: $color-blanco;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem 0rem 0rem 2rem;
+            height: auto;
+            gap: 10rem;
+
+            &__social-icons {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                width: 190px;
+                height: 38px;
+            }
+
+            &__logotipo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                height: 82px;
+                margin-left: 3rem;
+                background-color: red;
+
+            }
+
+
+            & .boton_concreta{
+                display: none;
+            }
+
+            & .menu-hamburguesa{
+                @include flex-box(center,center);
+                width: 20%;
+                height: 82px;
+                border-left: solid 1px #656565;
+            }
+
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #ABABAB;
+        }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 0;
+            background-color: #E8E8E8;
+
+            .menu-desplegable {
+                display: none;
+            }
+    
+            .menu-desplegable.mostrar {
+                display: block;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 45px;
+                list-style: none;
+
+            }
+
+            a {
+                font-family: $ff-monse;
+                letter-spacing: 2px;
+                font-size: .75rem;
+                letter-spacing: 2px;
+                text-align: center;
+                color: $color-chocolate;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 390px) {
+    header {
+
+        .contacto {
+            display: flex;
+            flex-direction: row;
+            background-color: $color-chocolate;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 1rem;
+            align-items: center;
+            font-size: .0.45rem;
+            color: $color-blanco;
+            font-family: $ff-monse;
+            gap: 2rem;
+
+
+            &__telefono {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: .5rem 0rem;
+
+                span {
+                    display: inline-block;
+                    color: $color-blanco;
+                    font-size: .65rem;
+                }
+
+                img {
+
+                    display: none;
+                }
+            }
+
+            &__mail {
+                font-family: $ff-monse;
+                font-size: .65rem;
+                color: $color-blanco;
+            }
+        }
+
+        .container {
+            gap: 1rem;
+
+
+            &__social-icons {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                width: 190px;
+                height: 38px;
+                padding: 0rem 0rem 0rem 2rem;
+
+            }
+
+            &__logotipo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 82px;
+                margin-left: 2rem;
+                background-color: red;
+
+
+            }
+
+
+            & .boton_concreta{
+                display: none;
+            }
+
+            & .menu-hamburguesa{
+                @include flex-box(center,center);
+                width: 40%;
+                height: 82px;
+                border-left: solid 1px #656565;
+            }
+
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #ABABAB;
+        }
+
+        nav {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 0;
+            background-color: #E8E8E8;
+
+            .menu-desplegable {
+                display: none;
+            }
+    
+            .menu-desplegable.mostrar {
+                display: block;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 45px;
+                list-style: none;
+
+            }
+
+            a {
+                font-family: $ff-monse;
+                letter-spacing: 2px;
+                font-size: .75rem;
+                letter-spacing: 2px;
+                text-align: center;
+                color: $color-chocolate;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
